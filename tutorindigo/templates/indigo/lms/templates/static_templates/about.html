@@ -1,21 +1,26 @@
-<%namespace name='static' file='../static_content.html'/>
-<%page expression_filter="h"/>
-<%! from django.utils.translation import gettext as _ %>
-<%inherit file="../main.html" />
-
-<%block name="pagetitle">${_("About")}</%block>
-
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="container about">
-        <h1>
-            <%block name="pageheader">${page_header or _("About")}</%block>
-        </h1>
-        <p>
-            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
-        </p>
-        <!-- NEW IN INDIGO: add graphic image -->
-        <div class="graphic-img">
-            <img src="${static.url('images/about.svg')}" alt="Runs on Tutor" />
-        </div>
+        <h1>Open Course: About Us</h1>
+        <p>Welcome to Open Course, your one-stop platform for free, high-quality education!</p>
+        
+        <h2>Our Mission</h2>
+        <p>We believe that education should be accessible to everyone, regardless of background or financial constraints. Open Course is dedicated to providing learners with a wealth of educational resources at no cost.</p>
+        
+        <h2>Our Content</h2>
+        <p>We curate course content from the rich libraries of top universities like Harvard, Stanford, MIT, and more. These video lectures are delivered by renowned professors and experts in their respective fields.</p>
+        
+        <h3>Benefits of Learning with Open Course</h3>
+        <ul>
+          <li>**Free Education:** We offer all courses and certificates completely free of charge.</li>
+          <li>**Top-Tier Content:** Learn from the best minds at leading universities worldwide.</li>
+          <li>**Flexible Learning:** Access courses anytime, anywhere, at your own pace.</li>
+          <li>**Valuable Certificates:** Earn certificates upon completion of courses to showcase your achievements.</li>
+        </ul>
+        
+        <h2>Our Team</h2>
+        <p>Open Course is run by a passionate team of educators and technology enthusiasts committed to democratizing education. We are constantly working to improve our platform and expand our course offerings.</p>
+        
+        <p>We hope you find Open Course to be a valuable resource in your educational journey. Let's learn and grow together!</p>
+      
     </section>
 </main>

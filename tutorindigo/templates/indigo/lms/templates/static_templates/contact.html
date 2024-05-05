@@ -1,21 +1,11 @@
-<%namespace name='static' file='../static_content.html'/>
-<%page expression_filter="h"/>
-<%! from django.utils.translation import gettext as _ %>
-<%inherit file="../main.html" />
-
-<%block name="pagetitle">${_("Contact Us")}</%block>
-
 <main id="main" aria-label="Content" tabindex="-1">
     <section class="container about">
-        <h1>
-            <%block name="pageheader">${page_header or _("Contact Us")}</%block>
-        </h1>
-        <p>
-            <%block name="pagecontent">${page_content or _("This page left intentionally blank. Feel free to add your own content.")}</%block>
-        </p>
-        <!-- NEW IN INDIGO: add graphic image -->
-        <div class="graphic-img">
-            <img src="${static.url('images/contact.svg')}" alt="Runs on Tutor" />
-        </div>
+        <h1>Open Course: Contact Us</h1>
+        <p>We'd love to hear from you! Feel free to reach out using the following methods:</p>
+        
+        <h2>Contact Information</h2>
+        <ul>
+            <li>**Email:** <a href="mailto:opencourse.team@gmail.com">opencourse.team@gmail.com</a></li>
+        </ul>
     </section>
 </main>
